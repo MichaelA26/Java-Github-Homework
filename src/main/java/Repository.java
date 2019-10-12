@@ -7,11 +7,19 @@ public class Repository {
     private RespositoryType repositorytype;
     private ArrayList<Commit> commits;
 
-    public Repository() {
+    public Repository(RespositoryType respositoryType, RespositoryType aPrivate) {
         this.name = name;
         this.description = description;
         this.repositorytype = repositorytype;
         this.commits = new ArrayList<Commit>();
     }
 
+
+    public ArrayList<Commit> getCommits() {
+        return this.commits;
+    }
+
+    public RespositoryType getType() {
+        return repositorytype.PRIVATE;
+    }
 }
