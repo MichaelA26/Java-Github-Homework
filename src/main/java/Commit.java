@@ -10,4 +10,15 @@ public class Commit {
         this.uniqueid = uniqueid;
     }
 
+    public CommitType getCommitType() {
+        return committype;
+    }
+
+    public Description getDescription() {
+        return description;
+    }
+
+    public UniqueID getUniqueID() {
+        return uniqueid;
+    }
 }
