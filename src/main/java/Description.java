@@ -1,4 +1,5 @@
 public enum Description {
 
-    ADDEDTHING
+    COMMITDESCRIPTION,
+    REPODESCRIPTION
 }

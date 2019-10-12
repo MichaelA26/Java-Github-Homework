@@ -9,7 +9,7 @@ public class CommitTest {
 
     @Before
     public void setup() {
-        commit = new Commit(CommitType.FEATURE, Description.ADDEDTHING, UniqueID.VALUE);
+        commit = new Commit(CommitType.FEATURE, Description.COMMITDESCRIPTION, UniqueID.VALUE);
     }
 
     @Test
@@ -19,7 +19,7 @@ public class CommitTest {
 
     @Test
     public void commitHasDescription() {
-        assertEquals(Description.ADDEDTHING, commit.getDescription());
+        assertEquals(Description.COMMITDESCRIPTION, commit.getDescription());
     }
 
     @Test
